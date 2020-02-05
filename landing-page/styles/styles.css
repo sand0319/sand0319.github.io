@@ -1,0 +1,282 @@
+/* Set the background color */
+.wrapper {
+    width: auto;
+    background-color: #f7f7ff;
+}
+
+/* Change font for the page */
+.wrapper h1, h2, p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Resizes the logo */
+.wrapper header img {
+    width: 100px;
+    height: auto;
+}
+
+.wrapper .main-content {
+    padding-left: 30px;
+    padding-right: 20px;
+}
+/* Font size for main */
+.wrapper .main-content h1 {
+    font-size: 90px;
+}
+
+.wrapper .main-content p {
+    font-size: 41px;
+}
+
+/* Removes the border from each fieldset element */
+.contact-form fieldset, .foot fieldset {
+    border: 0;
+}
+
+/* Center the form */
+.contact-form {
+    padding: 25px;
+}
+
+/* Makes a border and shadow */
+/* Define the width of the form */
+.contact-form form {
+    background-color: #ffffff;
+    border: 1px solid #888888;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px #888888;
+    padding-left: 25px;
+    width: 400px;
+    height: auto;
+}
+/* Font size for form */
+.contact-form form h2 {
+    font-size: 60px;
+}
+
+.contact-form form p {
+    font-size: 25px;
+}
+
+.contact-form form .link-form {
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+/* Change the size of the fieldsets */
+.contact-form input[type=text] {
+    width: 350px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: rgb(235, 235, 235);
+    padding-left: 10px;
+}
+
+.contact-form input[type=checkbox] {
+    width: 25px;
+    height: 25px;
+}
+
+.contact-form fieldset{
+    font-size: 25px;
+}
+
+/* Affect button size, color, font, and give it a rounded edge */
+.contact-form button {
+    width: 350px;
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background-color: #57eeab;
+    margin-left: 20px;
+}
+
+/* Affect the links states during hover */
+.contact-form a:link,
+.contact-form a:visited {
+    color: #ff8480;
+    text-decoration: none;
+}
+
+.contact-form a:hover,
+.contact-form a:active {
+    color: #57eeab;
+}
+
+/* Background color and padding for the footer form */
+.foot {
+    background-color: #fffd8c;
+    padding-left: 60px;
+    padding-right: 40px;
+}
+
+/* Changed font size */
+.foot h2 {
+    font-size: 30px;
+    padding-top: 20px;
+}
+.foot p {
+    font-size: 20px;
+}
+
+/* Made footer form into grid and organzied it */
+.foot-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Change the dimensions and layout of form element */
+.foot-form .hours input[type=text] {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 60px;
+    height: 35px;
+    margin-left: -10px;
+}
+
+.foot-form .city input[type=text] {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    width: 300px;
+    height: 35px;
+    
+}
+
+.foot-form input[type=text] {
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+/* Gave button color */
+.foot-form button {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    height: 35px;
+    margin-top: 5px;
+    color: #f7f7ff;
+    background-color: #ff8480;
+    font-weight: bold;
+    font-size: 26px;
+    border-radius: 10px;
+    border: none;
+}
+
+.foot-form {
+    padding-bottom: 30px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+/* Breakpoint for tablet */
+@media (min-width: 720px) {
+    /* Layout and font fixs for tablet */
+    /* Start layout of intro text */
+    .wrapper header {
+        margin-bottom: -50px;
+    }
+    .wrapper header {
+        padding-left: 80px;
+    }
+
+    .wrapper .intro-text {
+        padding-left: 60px;
+    }
+
+    .wrapper .intro-text p {
+        font-size: 30px;
+    }
+    /* End layout for intro text */
+
+    /* Start layout for body form */
+    .contact-form {
+        padding-left: 55px;
+    }
+
+    .contact-form form {
+        width: 600px;
+    }
+
+    .contact-form h2,
+    .contact-form p {
+        padding-left: 20px;
+    }
+
+    .contact-form input[type=text] {
+        width: 525px;
+    }
+
+    .contact-form button[type=submit] {
+        padding-left: 40px;
+    }
+    .contact-form button {
+        width: 535px;
+    }
+
+    .contact-form .link-form {
+        text-align: center;
+    }
+    /* End layout for body form */
+
+    /* Start layout for footer form */
+    .foot h2 {
+        font-size: 25px;
+    }
+
+    .foot-form .hours input[type=text] {
+        grid-column: 1/2;
+        width: 100px;
+    }
+
+    .foot-form .city input[type=text] {
+        grid-column: 1/3;
+        margin-left: -80px;
+    }
+
+    .foot-form button {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .icons {
+        justify-content: space-evenly;
+        margin: auto;
+        width: 400px;
+    }
+}
+
+/* Breakpoint for desktop */
+@media (min-width: 960px) {
+
+    /* Make body into grid */
+    .main-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-image: url("../img/scooter.svg");
+        background-size: 800px 800px;
+        background-repeat: no-repeat;
+        background-position: 400px 5px;
+    }
+
+    .scooter {
+        opacity: 0;
+    }
+
+    /* Layout fixes for desktop */
+    /* Main body content layout */
+    .wrapper .intro-text h1 {
+        font-size: 60px;
+        padding-top: 110px;
+    }
+
+    .wrapper .intro-text p {
+        font-size: 20px;
+    }
+}
