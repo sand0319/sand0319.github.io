@@ -21,11 +21,11 @@
 }
 /* Font size for main */
 .wrapper .main-content h1 {
-    font-size: 90px;
+    font-size: 80px;
 }
 
 .wrapper .main-content p {
-    font-size: 41px;
+    font-size: 24px;
 }
 
 /* Removes the border from each fieldset element */
@@ -49,13 +49,19 @@
     width: 400px;
     height: auto;
 }
+
+/* Removes border from inputs */
+.contact-form input,
+.foot-form input {
+    border: none;
+}
 /* Font size for form */
 .contact-form form h2 {
-    font-size: 60px;
+    font-size: 40px;
 }
 
 .contact-form form p {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .contact-form form .link-form {
@@ -77,6 +83,11 @@
     height: 25px;
 }
 
+.contact-form label {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .contact-form fieldset{
     font-size: 25px;
 }
@@ -86,12 +97,16 @@
     width: 350px;
     height: 50px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: bold;
     border: none;
     border-radius: 10px;
     background-color: #57eeab;
     margin-left: 20px;
+}
+
+.contact-form .link-form {
+    font-size: 14px;
 }
 
 /* Affect the links states during hover */
@@ -115,11 +130,11 @@
 
 /* Changed font size */
 .foot h2 {
-    font-size: 30px;
+    font-size: 18px;
     padding-top: 20px;
 }
 .foot p {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 /* Made footer form into grid and organzied it */
@@ -159,7 +174,7 @@
     color: #f7f7ff;
     background-color: #ff8480;
     font-weight: bold;
-    font-size: 26px;
+    font-size: 24px;
     border-radius: 10px;
     border: none;
 }
@@ -190,8 +205,12 @@
         padding-left: 60px;
     }
 
+    .wrapper .intro-text h1 {
+        font-size: 80px;
+    }
+
     .wrapper .intro-text p {
-        font-size: 30px;
+        font-size: 24px;
     }
     /* End layout for intro text */
 
@@ -209,6 +228,14 @@
         padding-left: 20px;
     }
 
+    .contact-form h2 {
+        font-size: 40px;
+    }
+
+    .contact-form p {
+        font-size: 30px;
+    }
+
     .contact-form input[type=text] {
         width: 525px;
     }
@@ -216,18 +243,27 @@
     .contact-form button[type=submit] {
         padding-left: 40px;
     }
+    .contact-form form fieldset label p {
+        font-size: 20px;
+    }
     .contact-form button {
         width: 535px;
+        font-size: 32px;
     }
 
     .contact-form .link-form {
         text-align: center;
+        font-size: 17px;
     }
     /* End layout for body form */
 
     /* Start layout for footer form */
     .foot h2 {
-        font-size: 25px;
+        font-size: 18px;
+    }
+
+    .foot p {
+        font-size: 16px;
     }
 
     .foot-form .hours input[type=text] {
@@ -241,6 +277,7 @@
     }
 
     .foot-form button {
+        font-size: 24;
         grid-column: 3/4;
         grid-row: 1/2;
     }
@@ -272,11 +309,37 @@
     /* Layout fixes for desktop */
     /* Main body content layout */
     .wrapper .intro-text h1 {
-        font-size: 60px;
         padding-top: 110px;
     }
 
-    .wrapper .intro-text p {
-        font-size: 20px;
+    .contact-form p {
+        font-size: 24px;
+    }
+    
+    .contact-form fieldset label p {
+        font-size: 18px;
+    }
+
+    .contact-form .link-form {
+        font-size: 16px;
+    }
+
+    /* Footer content layout */
+    .grid-foot {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .foot-form {
+        grid-column: 1/2;
+    }
+
+    .grid-foot .city input[type=text] {
+        margin-left: 10px;
+    }
+
+    .icons {
+        grid-column: 3/4;
+        margin-top: 0;
     }
 }
