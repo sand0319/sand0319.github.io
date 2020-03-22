@@ -10,8 +10,52 @@
 
     <title>Bootstrap This!</title>
   </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <body class="bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-danger">
+      <!-- a branding style can be achieved by adding .navbar-brand -->
+      <a href="#" class="navbar-brand">
+      <img src="https://via.placeholder.com/75" alt="my logo">
+      </a>
+
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#myNav">
+          <!-- adding an icon for the toggler button -->
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- the main neds to e placed inside a. navbar-nav container in order to work -->
+      <div id="myNav" class="collapse navbar-collapse">
+          <div class="navbar-nav ml-auto">
+              <a href="#" class="nav-link active">Home</a>
+              <a href="#" class="nav-link">About</a>
+              <a href="#" class="nav-link">Contact</a>
+          </div>
+      </div>
+    </nav>
+
+    <p class="h1 text-white text-center font-weight-bold pt-3">Welcome to Bootstrap</p>
+    <p class="h1 text-white text-center font-weight-bold pb-3">101</p>
+
+    <div class="container bg-secondary">
+      <div class="row">
+        <div class="col-sm">
+          <p class="h3 text-white p-3">Badges</p>
+          <p class="text-white p-3">Badges are little notications or labels used on text,links, and buttons to tell how many items are read or unread.</p>
+          <p class="text-white p-3">Sites like Youtube, Twitter, and Facebook use this in their notification to tell the user if there are unread items.</p>
+        </div>
+        <div class="col text-center my-auto">
+          <button type="button" class="btn btn-danger align-middle">
+            Here's the text and next to it is the badge <span class="badge badge-light">6</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container bg-secondary">
+      <div class="row">
+        <div class="col-sm">
+          
+        </div>
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
