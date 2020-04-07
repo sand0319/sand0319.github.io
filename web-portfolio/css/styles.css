@@ -348,6 +348,7 @@ footer {
     /* ABOUT PAGE */
     .me {
         grid-template-columns: 1fr 1fr;
+        margin-bottom: 70px;
     }
 
     .profile {
@@ -369,6 +370,7 @@ footer {
     /* CONTACT PAGE */
     .contact {
         grid-template-columns: 1fr 1fr;
+        margin-bottom: 130px;
     }
 
     .contact-form fieldset label {
